@@ -46,7 +46,7 @@ After this process, regression models were built for all the CSV files of the 7 
 The Regression models that were built to find the optimal body position at each of the 7 steps are then used to predict the optimal position of the 7 muscle groups to achieve a different range of distances. The table below shows the different body positions to achieve a range of distances:</br>
 
 **At step 1:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |--------------|------------|-------------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 85-87        | 1.8        | 86          | 100       | 90       | 151        | 100       | 163        | 166         | 155   | 36       |
 |              | 1.85       | 91          | 102       | 102      | 175        | 121.08    | 154        | 146         | 167   | 117      |
@@ -59,7 +59,7 @@ The Regression models that were built to find the optimal body position at each 
 |              | 1.9        | 95          | 120       | 90       | 171        | 147       | 156        | 165         | 134   | 82       |
 
 **At step 2:**
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 71        | 97       | 138        | 150       | 160        | 160         | 166   | 70       |
 |          | 1.85   | 91     | 80        | 67       | 138        | 144       | 152        | 147         | 174   | 68       |
@@ -74,7 +74,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 90        | 97       | 157        | 132       | 172        | 148         | 145   | 101      |
 
 **At step 3:** 
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 84        | 103      | 138        | 161       | 142        | 159         | 161   | 79       |
 |          | 1.85   | 91     | 86        | 99       | 132        | 153       | 147        | 161         | 160   | 69       |
@@ -89,7 +89,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 116       | 112      | 152        | 134       | 132        | 159         | 153   | 61       |
 
 **At step 4:**
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 94        | 92       | 138        | 139       | 150        | 159         | 174   | 52       |
 |          | 1.85   | 91     | 104       | 122      | 131        | 145       | 152        | 149         | 174   | 61       |
@@ -104,7 +104,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 103       | 114      | 161        | 149       | 175        | 154         | 159   | 104      |
 
 **At step 5:**
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 115       | 107      | 163        | 129       | 164        | 166         | 161   | 72       |
 |          | 1.85   | 91     | 111       | 114      | 147        | 149       | 159        | 156         | 172   | 69       |
@@ -119,7 +119,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 97        | 99       | 147        | 165       | 150        | 151         | 146   | 72       |
 
 **At step 6 (final step):**
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 91        | 121      | 163        | 160       | 149        | 169         | 139   | 82       |
 |          | 1.85   | 91     | 84        | 119      | 163        | 165       | 154        | 172         | 132   | 110      |
@@ -134,7 +134,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 72        | 86       | 167        | 169       | 154        | 167         | 143   | 99       |
 
 **During release:**
-| Distance | Height | Weight | Right Hip | Left Hip | Right knee | Left knee | Left trunk | Right trunk | Elbow | Shoulder |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 75        | 127      | 142        | 176       | 133        | 159         | 165   | 164      |
 |          | 1.85   | 91     | 77        | 125      | 156        | 167       | 152        | 164         | 166   | 172      |

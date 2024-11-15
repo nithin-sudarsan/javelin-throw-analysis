@@ -13,7 +13,6 @@ The body posture of top javelin throw athletes was measured by building a machin
 - Andreas Hofmann</br>
 - Magnus Kirt</br>
 
-
 Since the information such as the number of steps taken in the approach phase varied from one video to another, all the videos are trimmed such that each of them consists of the last six steps, which is generally referred to as the crossover phase. After undergoing trimming, we remain with videos that have 90 frames each. According to studies conducted at Concordia University, NE, on analyzing the biomechanics behind javelin throw, seven main muscle groups play a major role in determining the velocity gained by the athlete in the approach phase. These muscle groups are as follows:</br>
 - Gastrocnemius muscle</br>
 - Soleus muscle</br>
@@ -22,7 +21,6 @@ Since the information such as the number of steps taken in the approach phase va
 - Rectus Abdominis</br>
 - Triceps</br>
 - Rhomboids </br>
-
 
 To measure the position of these muscle groups, we calculate 8 different angles from the mediapipe Pose framework. The landmarks of these angles are as shown in the image below:</br></br>
 ![Picture1](https://user-images.githubusercontent.com/84195790/168995043-7f9e17ca-6468-4880-85a9-38fd72919457.png)
@@ -35,8 +33,8 @@ These angles at each step in the approach phase are stored in 7 separate CSV fil
 - Right knee angle
 - Left trunk angle
 - Right trunk angle
-- Elbow angle
-- Shoulder angle
+- Dominant Elbow angle
+- Dominant Shoulder angle
 - Height of athlete
 - Weight of athlete
 - Distance traveled by javelin
@@ -46,7 +44,7 @@ After this process, regression models were built for all the CSV files of the 7 
 The Regression models that were built to find the optimal body position at each of the 7 steps are then used to predict the optimal position of the 7 muscle groups to achieve a different range of distances. The table below shows the different body positions to achieve a range of distances:</br>
 
 **At step 1:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |--------------|------------|-------------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 85-87        | 1.8        | 86          | 100       | 90       | 151        | 100       | 163        | 166         | 155   | 36       |
 |              | 1.85       | 91          | 102       | 102      | 175        | 121.08    | 154        | 146         | 167   | 117      |
@@ -59,7 +57,7 @@ The Regression models that were built to find the optimal body position at each 
 |              | 1.9        | 95          | 120       | 90       | 171        | 147       | 156        | 165         | 134   | 82       |
 
 **At step 2:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 71        | 97       | 138        | 150       | 160        | 160         | 166   | 70       |
 |          | 1.85   | 91     | 80        | 67       | 138        | 144       | 152        | 147         | 174   | 68       |
@@ -74,7 +72,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 90        | 97       | 157        | 132       | 172        | 148         | 145   | 101      |
 
 **At step 3:** 
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 84        | 103      | 138        | 161       | 142        | 159         | 161   | 79       |
 |          | 1.85   | 91     | 86        | 99       | 132        | 153       | 147        | 161         | 160   | 69       |
@@ -89,7 +87,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 116       | 112      | 152        | 134       | 132        | 159         | 153   | 61       |
 
 **At step 4:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 94        | 92       | 138        | 139       | 150        | 159         | 174   | 52       |
 |          | 1.85   | 91     | 104       | 122      | 131        | 145       | 152        | 149         | 174   | 61       |
@@ -104,7 +102,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 103       | 114      | 161        | 149       | 175        | 154         | 159   | 104      |
 
 **At step 5:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 115       | 107      | 163        | 129       | 164        | 166         | 161   | 72       |
 |          | 1.85   | 91     | 111       | 114      | 147        | 149       | 159        | 156         | 172   | 69       |
@@ -119,7 +117,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 97        | 99       | 147        | 165       | 150        | 151         | 146   | 72       |
 
 **At step 6 (final step):**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 91        | 121      | 163        | 160       | 149        | 169         | 139   | 82       |
 |          | 1.85   | 91     | 84        | 119      | 163        | 165       | 154        | 172         | 132   | 110      |
@@ -134,7 +132,7 @@ The Regression models that were built to find the optimal body position at each 
 |          | 1.9    | 95     | 72        | 86       | 167        | 169       | 154        | 167         | 143   | 99       |
 
 **During release:**
-| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Elbow (&deg;) | Shoulder (&deg;) |
+| Distance (m) | Height (m) | Weight (kg) | Right Hip (&deg;) | Left Hip (&deg;) | Right knee (&deg;) | Left knee (&deg;) | Left trunk (&deg;) | Right trunk (&deg;) | Dominant Elbow (&deg;) | Dominant Shoulder (&deg;) |
 |----------|--------|--------|-----------|----------|------------|-----------|------------|-------------|-------|----------|
 | 82-84    | 1.8    | 86     | 75        | 127      | 142        | 176       | 133        | 159         | 165   | 164      |
 |          | 1.85   | 91     | 77        | 125      | 156        | 167       | 152        | 164         | 166   | 172      |
@@ -148,7 +146,7 @@ The Regression models that were built to find the optimal body position at each 
 
 ## Data Visualization
 
-### Approach Phase Analysis (Steps 1-4)
+### Approach Phase Analysis (Steps 1-6)
 | Step 1 | Step 2 |
 |--------|--------|
 | ![Step 1](https://github.com/user-attachments/assets/0441cef1-ae98-4374-8ef5-768c4c4e64f9) | ![Step 2](https://github.com/user-attachments/assets/89b5320c-4102-40bd-9800-086f223ed9b2) |
@@ -157,43 +155,51 @@ The Regression models that were built to find the optimal body position at each 
 |--------|--------|
 | ![Step 3](https://github.com/user-attachments/assets/e53d7a19-8972-4f8e-839d-a830e177c8ae) | ![Step 4](https://github.com/user-attachments/assets/99eaf89a-5112-4d0d-86a2-f5daee6334c1) |
 
-### Final Step and Release
-| Step 5 | Release Phase |
-|--------|---------------|
-| ![Step 5](https://github.com/user-attachments/assets/7ef80875-1757-4f95-a607-d0d1241332cc) | ![Release](https://github.com/user-attachments/assets/3e21e01d-9aad-4c9e-b912-e3cd64a42767) |
+| Step 5 | Step 6 |
+|--------|--------|
+| ![Step 5](https://github.com/user-attachments/assets/7ef80875-1757-4f95-a607-d0d1241332cc) | ![Step 6](https://github.com/user-attachments/assets/b9493e86-36c5-48cd-a18e-408c04630ea7) |
+
+###  Release Phase
+![Release](https://github.com/user-attachments/assets/3e21e01d-9aad-4c9e-b912-e3cd64a42767) 
 
 ## Analysis and Interpretations
 
 ### Overview
 This section provides a comprehensive analysis of the kinematic patterns observed in the collected data, examining the angular measurements of eight key joint positions across the final five steps and release phase. The analysis reveals distinctive technical patterns that characterize successful throws and highlights critical movement sequences.
 
-### 1. Approach Phase Analysis (Steps 1-5)
+### 1. Approach Phase Analysis (Steps 1-6)
 
 #### 1.1 Lower Body Mechanics
 - **Hip Angles**
-  - Maintain consistent range of 90-120°
-  - Bilateral coordination between right and left hips
-  - Progressive stabilization approaching release
+  - Right hip shows progressive reduction (90-70°) approaching release
+  - Left hip maintains stability (100-120°) through approach
+  - Greater hip angle differential in successful throws (85-90m)
 
 - **Knee Angles**
-  - Higher angles (140-180°) indicating extended positions
-  - More successful throws show greater knee extension stability
-  - Left knee particularly stable in final steps
+  - Right knee maintains extension (140-175°) through approach
+  - Left knee shows consistent high angles (160-170°) in final phases
+  - Critical stabilization in Steps 5-6
 
 #### 1.2 Upper Body Mechanics
 - **Trunk Position**
-  - Coordinated left-right trunk angles (140-160°)
-  - Reduced variability in final steps
-  - Critical for force transfer from lower to upper body
+  - Left trunk angle: 140-160° maintained through approach
+  - Right trunk shows progressive increase (140-170°) until Step 6
+  - Trunk coordination peaks at release phase
 
 - **Shoulder and Elbow Position**
-  - Shoulder shows strategic loading pattern (60-80°)
-  - Elbow maintains extension (140-180°)
-  - Progressive reduction in variability approaching release
+  - Shoulder angle fluctuates (60-120°) in early steps
+  - Elbow maintains high angles (140-170°) throughout
+  - Release phase shows optimal alignment (160-175°)
+  
+### 2. Critical Phase Analysis
+#### 2.1 Penultimate Step (Step 6)
+- **Distinctive Features**
+  - Right hip reaches optimal angle (70-80°)
+  - Left knee achieves peak extension (165-175°)
+  - Trunk angles show maximal coordination
+  - Elbow position begins final preparation (140-150°)
 
-### 2. Release Phase Characteristics
-
-#### 2.1 Optimal Release Position
+#### 2.2 Release Phase Characteristics
 - **Upper Body Alignment**
   - Shoulder-elbow-trunk alignment at 160-180°
   - Consistent across successful throws
@@ -204,7 +210,12 @@ This section provides a comprehensive analysis of the kinematic patterns observe
   - Left knee maintained at 160-170°
   - Creates stable base for force generation
 
-#### 2.2 Technical Execution
+- **Final Position Optimization**
+  - Full extension of throwing arm (165-175°)
+  - Shoulder-trunk alignment (160-170°)
+  - Stable hip positioning (75-85°)
+  - Coordinated knee extension (160-170°)
+
 - **Joint Sequencing**
   - Coordinated progression from lower to upper body
   - Full extension of throwing arm
@@ -214,24 +225,24 @@ This section provides a comprehensive analysis of the kinematic patterns observe
 ### 3. Performance Correlations
 
 #### 3.1 Distance Factors
-Better performances (85-90m) consistently show:
-- More consistent hip angles
-- Higher knee extension angles
-- Superior shoulder-elbow coordination
-- Stable trunk positions
+Throws achieving greater distances (85-90m) consistently display:
+- More stable progression of hip angles
+- Better maintained knee extension
+- Superior trunk coordination
+- Optimal shoulder-elbow positioning at release
 
 #### 3.2 Technical Consistency
-- Reduced variability in final positions
-- Maintained body alignment
-- Efficient energy transfer
-- Coordinated joint sequencing
+- Minimal angle variability in final phases
+- Synchronized joint movements
+- Efficient energy transfer through kinetic chain
+- Balanced body positioning throughout
 
 ### 4. Technical Implications
 
 #### 4.1 Key Success Factors
 1. **Approach Phase**
-   - Progressive stabilization
-   - Individual style accommodation
+   - Progressive angular changes
+   - Maintained stability in key joints
    - Coordinated movement patterns
 
 2. **Release Phase**
@@ -247,6 +258,7 @@ Better performances (85-90m) consistently show:
 - Control trunk rotation
 - Sustain knee extension
 - Coordinate hip positioning
+- Efficient energy transfer patterns
 
 ## Conclusion
 

@@ -151,16 +151,16 @@ The Regression models that were built to find the optimal body position at each 
 ### Approach Phase Analysis (Steps 1-4)
 | Step 1 | Step 2 |
 |--------|--------|
-| ![Step 1](/Data%20Visualisation/graphs/step1.png) | ![Step 2](/Data%20Visualisation/graphs/step2.png) |
+| ![Step 1](https://github.com/user-attachments/assets/0441cef1-ae98-4374-8ef5-768c4c4e64f9) | ![Step 2](https://github.com/user-attachments/assets/89b5320c-4102-40bd-9800-086f223ed9b2) |
 
 | Step 3 | Step 4 |
 |--------|--------|
-| ![Step 3](/Data%20Visualisation/graphs/step3.png) | ![Step 4](/Data%20Visualisation/graphs/step4.png) |
+| ![Step 3](https://github.com/user-attachments/assets/e53d7a19-8972-4f8e-839d-a830e177c8ae) | ![Step 4](https://github.com/user-attachments/assets/99eaf89a-5112-4d0d-86a2-f5daee6334c1) |
 
 ### Final Step and Release
 | Step 5 | Release Phase |
 |--------|---------------|
-| ![Step 5](/Data%20Visualisation/graphs/step5.png) | ![Release](/Data%20Visualisation/graphs/release.png) |
+| ![Step 5](https://github.com/user-attachments/assets/7ef80875-1757-4f95-a607-d0d1241332cc) | ![Release](https://github.com/user-attachments/assets/3e21e01d-9aad-4c9e-b912-e3cd64a42767) |
 
 ## Analysis and Interpretations
 

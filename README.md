@@ -1,4 +1,4 @@
-# Javelin-throw analysis
+# Javelin-throw Analysis
 ## Uncovering the objective
 The primary objective in the sport of javelin throw is to achieve the maximum distance of flight of javelin. This distance traveled by the javelin is dependent mainly on the angle of release of the javelin and the approach run to gain velocity. </br></br>
 The javelin throw is different from all other overhead throws as it is more of an over-arm whip and flip motion that uses the efforts of the entire body. Terms such as fling, flip, the whip are much more descriptive and result in a more relaxed sequentially efficient delivery in which the arm of the athlete gets involved in the projection only after the major muscles of the legs, hips, and trunk have been utilized.</br></br>

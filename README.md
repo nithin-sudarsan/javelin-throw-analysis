@@ -165,25 +165,25 @@ The Regression models that were built to find the optimal body position at each 
 ## Analysis and Interpretations
 
 ### Overview
-This section provides a comprehensive analysis of the kinematic patterns observed in the collected data, examining the angular measurements of eight key joint positions across the final five steps and release phase. The analysis reveals distinctive technical patterns that characterize successful throws and highlights critical movement sequences.
+This section provides a comprehensive analysis of the kinematic patterns observed in the collected data, examining the angular measurements of eight key joint positions across the final six steps and release phase. The analysis reveals distinctive technical patterns that characterize successful throws and highlights critical movement sequences.
 
 ### 1. Approach Phase Analysis (Steps 1-6)
 
 #### 1.1 Lower Body Mechanics
 - **Hip Angles**
-  - Right hip shows progressive reduction (90-70°) approaching release
-  - Left hip maintains stability (100-120°) through approach
+  - Dominant side of hip shows progressive reduction (90-70°) approaching release
+  - Non-dominant side of hip maintains stability (100-120°) through approach
   - Greater hip angle differential in successful throws (85-90m)
 
 - **Knee Angles**
-  - Right knee maintains extension (140-175°) through approach
-  - Left knee shows consistent high angles (160-170°) in final phases
+  - Dominant knee maintains extension (140-175°) through approach
+  - Non-dominant knee shows consistent high angles (160-170°) in final phases
   - Critical stabilization in Steps 5-6
 
 #### 1.2 Upper Body Mechanics
 - **Trunk Position**
-  - Left trunk angle: 140-160° maintained through approach
-  - Right trunk shows progressive increase (140-170°) until Step 6
+  - Non-dominant side of trunk angle: 140-160° maintained through approach
+  - Dominant side of trunk shows progressive increase (140-170°) until Step 6
   - Trunk coordination peaks at release phase
 
 - **Shoulder and Elbow Position**
@@ -194,8 +194,8 @@ This section provides a comprehensive analysis of the kinematic patterns observe
 ### 2. Critical Phase Analysis
 #### 2.1 Penultimate Step (Step 6)
 - **Distinctive Features**
-  - Right hip reaches optimal angle (70-80°)
-  - Left knee achieves peak extension (165-175°)
+  - Dominant side of hip reaches optimal angle (70-80°)
+  - Non-dominant knee achieves peak extension (165-175°)
   - Trunk angles show maximal coordination
   - Elbow position begins final preparation (140-150°)
 
@@ -206,8 +206,8 @@ This section provides a comprehensive analysis of the kinematic patterns observe
   - Indicates optimal power position
 
 - **Lower Body Support**
-  - Right hip stabilized at 70-80°
-  - Left knee maintained at 160-170°
+  - Dominant side of hip stabilized at 70-80°
+  - Non-dominant knee maintained at 160-170°
   - Creates stable base for force generation
 
 - **Final Position Optimization**
